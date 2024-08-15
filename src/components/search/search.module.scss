@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 16px;
+  height: 42px;
+}
+
+.container {
+  height: inherit;
+  width: calc((((100% + 64px) * 2) / 3) - 50px);
+  min-width: 256px;
+}
+
+.input {
+  background: #f2f2f2;
+  height: inherit;
+  font-size: 14px;
+
+  :global(.MuiOutlinedInput-input) {
+    height: inherit;
+    font-weight: 500;
+    padding: 0 16px;
+    letter-spacing: 0.17px;
+
+    &::placeholder {
+      font-weight: 400;
+      color: #828282;
+      font-style: italic;
+    }
+  }
+}
+
+.button {
+  &:global(.MuiButton-root) {
+    background: #2196f3;
+    height: inherit;
+    font-size: 15px;
+    padding-inline: 22px;
+  }
+}
